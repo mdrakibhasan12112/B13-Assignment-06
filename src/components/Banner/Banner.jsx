@@ -29,13 +29,12 @@ const Banner = () => {
              {' '}
              Explore Products
            </button>
-           <button className="btn border-purple-400 rounded-full text-purple-600">
+           <button className="btn border-purple-400 rounded-full text-purple-600 hover:bg-violet-600">
              {' '}
              <IoPlayOutline />
              Watch Demo
            </button>
          </div>
-
        </div>
 
        {/* Right Image */}
@@ -47,8 +46,7 @@ const Banner = () => {
              alt=""
            />
          </div>
-    </div>
-    
+       </div>
      </div>
    </div>
  );
