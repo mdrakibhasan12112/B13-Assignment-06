@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI assistance.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates",
+     "ATS optimization", 
+     "Export to PDF"],
+    "icon": "https://i.ibb.co.com/84XLcHGr/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Asset Pack",
+    "description": "Premium UI kits, icons, and illustrations.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["5000+ icons", "UI kits included", "Commercial license"],
+    "icon": "https://i.ibb.co.com/4nr8kC2S/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Content Writer",
+    "description": "Generate blogs, ads, and social media content.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Blog generation", "SEO optimized", "Multiple tones"],
+    "icon": "https://i.ibb.co.com/fYF8wp5r/Group.png"
+  },
+  {
+    "id": 4,
+    "name": "Website Templates",
+    "description": "Ready-made templates for fast development.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["React templates", "Tailwind support", "Responsive design"],
+    "icon": "https://i.ibb.co.com/4n1bjhwr/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "AI Image Generator",
+    "description": "Create stunning images using AI.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["High-quality images", "Text to image", "Fast generation"],
+    "icon": "https://i.ibb.co.com/C3Fm8WW8/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Productivity Suite",
+    "description": "All-in-one productivity tools for daily work.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best",
+    "features": ["Task manager", "Calendar integration", "Cloud sync"],
+    "icon": "https://i.ibb.co.com/PGKQGv2x/social-media.png"
+  }
+]
