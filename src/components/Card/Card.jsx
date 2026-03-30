@@ -1,16 +1,20 @@
 import React from 'react';
 import cardImg from '../../assets/shopping-cart.png'
+import { toast } from 'react-toastify';
 
 const Card = ({ cards, setCards }) => {
   const totalPrice = cards.reduce((sum, item) => sum + item.price, 0);
 
   const handleProceedAllCard = () => {
-    setCards([]);
+   setCards([]);
+     toast.error('all item remove successfull');
+   
  };
  
  const handleSingleBtnDelete = (item) => {
   const filteredArray = cards.filter(c => c.id !== item.id)
   setCards(filteredArray)
+     toast.error("item remove successfull")
  }
 
   return (

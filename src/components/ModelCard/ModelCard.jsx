@@ -1,12 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ModelCard = ({ model, cards, setCards }) => {
   const [isBuy, setIsBuy] = useState(false);
 
   const handleBuyNow = () => {
-   setIsBuy(true);
-   setCards([...cards,model])
+   setIsBuy(true)
+
+   const isFound = cards.find((item) => item.id === model.id)
+   if (isFound) {
+    toast.error('item already in card')
+    return;
+}
+
+   setCards([...cards, model])
+   toast.success("card added successfull")
   };
 
   return (
