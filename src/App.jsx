@@ -6,6 +6,7 @@ import Card from './components/Card/Card';
 import Details from './components/Details/Details';
 import Models from './components/Models/Models';
 import Navbar from './components/Navber/Navbar';
+import Steps from './components/Steps/Steps';
 
 const getModels = async () => {
   const res = await fetch("/models.json")
@@ -63,6 +64,7 @@ console.log(activeTab);
       )}
 
       {activeTab === 'Card' && <Card cards={cards} setCards={setCards}></Card>}
+      <Steps></Steps>
     </>
   );
 }
