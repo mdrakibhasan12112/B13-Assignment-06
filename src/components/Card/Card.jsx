@@ -6,7 +6,12 @@ const Card = ({ cards, setCards }) => {
 
   const handleProceedAllCard = () => {
     setCards([]);
-  };
+ };
+ 
+ const handleSingleBtnDelete = (item) => {
+  const filteredArray = cards.filter(c => c.id !== item.id)
+  setCards(filteredArray)
+ }
 
   return (
     <div className="bg-base-200 w-[86%] mx-auto mt-10 shadow-lg">
@@ -14,13 +19,13 @@ const Card = ({ cards, setCards }) => {
         <h3 className="text-3xl font-semibold mb-5 p-4">Your Card</h3>
 
         {cards.length === 0 ? (
-          <div className=' flex flex-col items-center content-center text-center py-10'>
-            <img className='w-[80px] mb-4' src={cardImg} alt="" />
+          <div className=" flex flex-col items-center content-center text-center py-10">
+            <img className="w-[80px] mb-4" src={cardImg} alt="" />
             <p>Your card is Empty</p>
           </div>
         ) : (
           <>
-            {cards.map(item => (
+            {cards.map((item) => (
               <div className="shadow-sm py-10 p-5 flex justify-between">
                 <div className="flex gap-5">
                   <img className="w-[30px] h-[30px]" src={item.icon} alt="" />
@@ -32,7 +37,12 @@ const Card = ({ cards, setCards }) => {
                   </div>
                 </div>
                 <div>
-                  <button className=" text-red-400">remove</button>
+                  <button
+                    onClick={() => handleSingleBtnDelete(item)}
+                    className=" text-red-400"
+                  >
+                    remove
+                  </button>
                 </div>
               </div>
             ))}

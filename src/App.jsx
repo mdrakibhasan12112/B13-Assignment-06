@@ -49,7 +49,7 @@ console.log(activeTab);
             type="radio"
             name="my_tabs_1"
             className={`tab rounded-full w-40 ${activeTab === 'Card' ? 'bg-violet-600' : ''}`}
-            aria-label="Card"
+            aria-label={`Card (${cards.length})`}
             onClick={() => setActiveTab('Card')}
           />
         </div>

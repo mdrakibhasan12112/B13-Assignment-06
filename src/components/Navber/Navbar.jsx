@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex justify-between gap-5 items-center">
-        <img src={cardImg} alt="" />
+        <img src={cardImg } alt="" />
         <p>Login</p>
         <button className="btn bg-violet-600 border-none rounded-full text-white">
           Get Started
