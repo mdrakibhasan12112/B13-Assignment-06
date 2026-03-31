@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import { IoCheckmark } from 'react-icons/io5';
+
 
 const ModelCard = ({ model, cards, setCards }) => {
   const [isBuy, setIsBuy] = useState(false);
@@ -37,7 +39,9 @@ const ModelCard = ({ model, cards, setCards }) => {
         <div className="space-y-2 mt-4">
           {model.features.map((feature, index) => (
             <div key={index} className="flex items-center gap-2">
-              <span className="text-green-700">✔</span>
+              <span className="text-green-500">
+                <IoCheckmark />
+              </span>
               <p>{feature}</p>
             </div>
           ))}
