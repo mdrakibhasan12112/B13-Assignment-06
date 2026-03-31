@@ -59,7 +59,7 @@ const Pricing = () => {
           </button>
         </div>
 
-        <div className=" relative shadow-lg p-4 space-y-4 border rounded-lg border-zinc-200 bg-violet-600 text-white py-5">
+        <div className=" relative shadow-lg p-4 space-y-4 border rounded-lg border-zinc-200 bg-violet-600 text-white py-12">
           <span className='absolute -top-5 right-35 bg-yellow-200 rounded-full p-2 text-red-400'>Most Popular</span>
           <h3 className="text-xl font-semibold">Pro</h3>
           <p>Best for professionals</p>
