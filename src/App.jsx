@@ -8,6 +8,8 @@ import Models from './components/Models/Models';
 import Navbar from './components/Navber/Navbar';
 import Steps from './components/Steps/Steps';
 import Pricing from './components/PricingCard/Pricing';
+import WorkflowSection from './components/WorkflowSection/WorkflowSection';
+import Footer from './components/Footer/Footer';
 
 const getModels = async () => {
   const res = await fetch("/models.json")
@@ -25,7 +27,7 @@ console.log(activeTab);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cards={cards}></Navbar>
       <Banner></Banner>
       <Details></Details>
       {/* name of each tab group should be unique */}
@@ -67,6 +69,8 @@ console.log(activeTab);
       {activeTab === 'Card' && <Card cards={cards} setCards={setCards}></Card>}
       <Steps></Steps>
       <Pricing></Pricing>
+      <WorkflowSection></WorkflowSection>
+      <Footer></Footer>
     </>
   );
 }

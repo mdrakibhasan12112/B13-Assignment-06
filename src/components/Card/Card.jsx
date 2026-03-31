@@ -29,7 +29,7 @@ const Card = ({ cards, setCards }) => {
           </div>
         ) : (
           <>
-            {cards.map((item) => (
+            {cards.map(item => (
               <div className="shadow-sm py-10 p-5 flex justify-between">
                 <div className="flex gap-5">
                   <img className="w-[30px] h-[30px]" src={item.icon} alt="" />
